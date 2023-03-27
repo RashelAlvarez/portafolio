@@ -1,10 +1,10 @@
 <template>
   <v-app>
     
-    <v-app-bar collapse :elevation="24" app color="transparent">
+    <v-app-bar  :elevation="24" app color="transparent">
       <v-toolbar color="transparent" dark>
         <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
-        <v-toolbar-title>Click here</v-toolbar-title>
+        <v-toolbar-title>Portfolio</v-toolbar-title>
 
        
       </v-toolbar>
