@@ -6,7 +6,7 @@
       mode="out-in"
     >
       <v-row align="center" justify="center">
-        <v-col class="col-lg-7">
+        <v-col class="col-lg-7 col-md-7 col-sm-8">
           <v-card class="mx-auto  bounce cardColor" color="#1D153A" outlined>
             <v-list-item three-line>
               <v-list-item-content>
@@ -32,7 +32,7 @@
       mode="out-in"
     >
       <v-row align="center" justify="center">
-        <v-col class="col-lg-7">
+        <v-col class="col-lg-7 col-md-7 col-sm-8">
           <v-card class="mx-auto  bounce cardColor " color="#1D153A" outlined>
             <v-list-item three-line>
               <v-list-item-content>
@@ -62,7 +62,7 @@
       mode="out-in"
     >
       <v-row align="center" justify="center">
-        <v-col class="col-lg-7">
+        <v-col class="col-lg-7 col-md-7 col-sm-8">
           <v-card class="mx-auto  bounce cardColor" color="#1D153A " outlined>
             <v-list-item three-line>
               <v-list-item-content>

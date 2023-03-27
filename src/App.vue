@@ -1,48 +1,43 @@
 <template>
   <v-app>
-    <v-app-bar app color="transparent" dark>
-    <!--  <div class="d-flex align-center">
-        <v-img
-          alt="Vuetify Logo"
-          class="shrink mr-2"
-          contain
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
-          transition="scale-transition"
-          width="40"
-        />
+    
+    <v-app-bar collapse :elevation="24" app color="transparent">
+      <v-toolbar color="transparent" dark>
+        <v-app-bar-nav-icon @click="drawer = !drawer"></v-app-bar-nav-icon>
+        <v-toolbar-title>Click here</v-toolbar-title>
 
-        <v-img
-          alt="Vuetify Name"
-          class="shrink mt-1 hidden-sm-and-down"
-          contain
-          min-width="100"
-          src="https://cdn.vuetifyjs.com/images/logos/vuetify-name-dark.png"
-          width="100"
-        />
-      </div>-->
-
-      <v-spacer></v-spacer>
-      <v-btn text :to="{ name: 'homeApp' }">
-        <span class="mr-2">Home</span>
-        <v-icon>mdi-home</v-icon>
-      </v-btn>
-      <v-btn text :to="{name:'portfolioApp'}">
-        <span class="mr-2">Portfolio</span>
-        <v-icon>mdi-open-in-new</v-icon>
-      </v-btn>
-
-       <v-btn text :to="{ name: 'aboutApp' }">
-        <span class="mr-2">About</span>
-        <v-icon>mdi-account</v-icon>
-      </v-btn>
-
-      <v-btn text :to="{ name: 'contactApp' }">
-        <span class="mr-2">Contact</span>
-        <v-icon>mdi-account</v-icon>
-      </v-btn>
-
-      
+       
+      </v-toolbar>
     </v-app-bar>
+
+    <v-navigation-drawer app v-model="drawer" dark temporary>
+      <v-layout mt-4 column>
+        <v-flex>
+          <v-list color="dark">
+            <v-list-item
+              prepend-icon="mdi-view-dashboard"
+              title="Dashboard"
+              :to="{ path: '/' }">
+              <v-icon>mdi-home</v-icon> Home</v-list-item>
+            <v-list-item
+              prepend-icon="mdi-account-box"
+              title="Account"
+              :to="{ path: '/portfolio' }"    >
+              <v-icon>mdi-open-in-new</v-icon> Portfolio</v-list-item>
+            <v-list-item
+              prepend-icon="mdi-gavel"
+              title="Admin"
+              :to="{ path: '/about' }"  >
+              <v-icon>mdi-account</v-icon> About</v-list-item >
+                 <v-list-item
+              prepend-icon="mdi-gavel"
+              title="Admin"
+              :to="{ path: '/contact' }"  >
+              <v-icon>mdi-account</v-icon> Contact</v-list-item >
+          </v-list>
+        </v-flex>
+      </v-layout>
+    </v-navigation-drawer>
 
     <v-main>
       <Particles
@@ -62,20 +57,20 @@
             color: {
               /*value: '#02051E',*/
               /*value: '#3949AB'*/
-              value:'#1D153A'
+              value: '#1D153A',
             },
           },
-       /*   fullScreen:{
+          /*   fullScreen:{
             enable:true,
             zIndex: -1,
           },*/
           fpsLimit: 120,
           interactivity: {
             events: {
-              onClick: {
+            /*  onClick: {
                 enable: true,
                 mode: 'push',
-              },
+              },*/
               /* onHover: {
               enable: true,
               mode: 'repulse',
@@ -101,8 +96,8 @@
           particles: {
             color: {
               /*value: '#8C9EFF',*/
-           /*value: '#8C9EFF',*/
-           value: '#E040FB'
+              /*value: '#8C9EFF',*/
+              value: '#E040FB',
             },
             links: {
               color: '',
@@ -165,4 +160,14 @@ const particlesLoaded = async (container) => {
 </script>
 
 
+
+<script>
+export default {
+  data() {
+    return {
+      drawer: false,
+    };
+  },
+};
+</script>
 

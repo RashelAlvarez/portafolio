@@ -1,6 +1,6 @@
 <template>
   <v-container>
-    <v-row>
+    <v-row class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
       <v-col class="col-lg-4 col-sm-12">
         <v-list-item class="grow">
           <transition

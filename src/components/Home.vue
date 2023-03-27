@@ -1,7 +1,7 @@
 
 <template >
   <v-container
-    class=" flex flex-col justify-center "
+    class=" flex flex-col justify-center mb-5 "
     fluid
     fill-height
   >
