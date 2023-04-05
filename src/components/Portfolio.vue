@@ -10,15 +10,14 @@
           <v-card class="mx-auto  bounce cardColor" color="#1D153A" outlined>
             <v-list-item three-line>
               <v-list-item-content>
-                <div class="text-overline mb-4 colortext">API REST Laravel</div>
+                <div class="text-overline mb-4 colortext"> Web Application in Laravel</div>
 
                 <v-list-item-subtitle class="colortext font-weight-light"
-                  >Aplicacion Web de Gestion de pedidos con gestion de usuarios
-                  y productos</v-list-item-subtitle
+                  >Order Management Web Application with login, user and product management</v-list-item-subtitle
                 >
               </v-list-item-content>
 
-              <v-btn class="" outlined color="#8C9EFF">
+              <v-btn class="" target="_blank" href="https://github.com/RashelAlvarez/gestionPedidos" outlined color="#8C9EFF">
                 <v-icon class="" color="#8C9EFF"> mdi-github </v-icon>
               </v-btn>
             </v-list-item>
@@ -37,11 +36,11 @@
             <v-list-item three-line>
               <v-list-item-content>
                 <div class="text-overline mb-4 colortext">
-                  ApiRestFull Vuejs & Laravel
+                  ApiRest Vuejs , Laravel & Axios
                 </div>
 
                 <v-list-item-subtitle class="colortext font-weight-light"
-                  >CRUD with vuejs and Laravel</v-list-item-subtitle
+                  >CRUD and contact form with vuejs and Laravel</v-list-item-subtitle
                 >
               </v-list-item-content>
 
@@ -67,7 +66,7 @@
             <v-list-item three-line>
               <v-list-item-content>
                 <div class="text-overline mb-4 colortext">
-                  Portfolio Vuejs & Laravel
+                  Portfolio Vuejs , Laravel & Axios
                 </div>
 
                 <v-list-item-subtitle class="colortext font-weight-light"
@@ -76,7 +75,7 @@
                 >
               </v-list-item-content>
 
-              <v-btn class="" outlined color="#8C9EFF">
+              <v-btn class="" target="_blank" href="https://github.com/RashelAlvarez/portafolio"  outlined color="#8C9EFF">
                 <v-icon class="" color="#8C9EFF"> mdi-github </v-icon>
               </v-btn>
             </v-list-item>
