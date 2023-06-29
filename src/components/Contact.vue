@@ -17,7 +17,7 @@
         </v-card-title>
 
         <v-card-text class="text-h5 font-weight-bold">
-          <form v-on:submit.prevent="guardarContacto()">
+          <form v-on:submit.prevent="guardarContacto()" id="form">
             <v-row>
               <v-col class="col-6">
                 <v-text-field v-model="contacto.name" :rules="inputRules" class="" label="Name" outlined></v-text-field>
@@ -100,12 +100,23 @@ export default {
   },
 
   methods:{
+    
     guardarContacto(){
+      
            axios
         .post("https://apirestlaravel-production.up.railway.app/api/contacto", this.contacto)
         .then((response) => {
           console.log("contacto guardado" + response);
           this.snackbar = true;
+          this.contacto.name="";
+          this.contacto.email="";
+          this.contacto.message= "";
+          this.contacto.country="";
+          this.contacto.state="";
+          this.contacto.city="";
+          this.inputRules=[];
+          this.inputEmails=[];
+
         })
         .catch(function (error) {
           if (error.response.status === 422) {
