@@ -25,26 +25,4 @@
 
 ![104](https://github.com/RashelAlvarez/portafolio/assets/49957146/d154c1d9-2f6e-4374-992b-01e5ae0a5c9c)
 
-## Project setup
-
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
